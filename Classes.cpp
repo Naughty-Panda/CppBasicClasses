@@ -62,8 +62,7 @@ void Stack::Pop() {
 
 	if (!size) return;
 
-	data[size-1] = 0;
-	size--;
+	data[--size] = 0;
 }
 
 void Stack::Print() const {
